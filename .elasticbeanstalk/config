@@ -1,0 +1,12 @@
+[global]
+ApplicationName=elastic-beanstalk-nginx-uwsgi-django
+ApplicationVersionName=git-b0ccd71da4781bdc9ab24b62e21471ee1211ed5b-1390836838422
+DevToolsEndpoint=git.elasticbeanstalk.us-east-1.amazonaws.com
+EnvironmentName=elastic-beanstalk-nginx
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=/Users/wolfg/Documents/Dev/opensource/elastic-beanstalk-nginx-uwsgi-django/.elasticbeanstalk/optionsettings.elastic-beanstalk-nginx
+RdsEnabled=No
+Region=us-east-1
+ServiceEndpoint=https://elasticbeanstalk.us-east-1.amazonaws.com
+SolutionStack=64bit Amazon Linux 2013.09 running Python 2.7
+

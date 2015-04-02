@@ -12,3 +12,5 @@ $ git aws.push
 $ eb stop
 $ eb delete
 ```
+
+Update (04/02/2015): works on 64bit Amazon Linux 2014.09 v1.2.0 running Python 2.7

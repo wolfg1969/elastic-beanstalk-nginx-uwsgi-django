@@ -13,4 +13,4 @@ $ eb stop
 $ eb delete
 ```
 
-Update (04/02/2015): works on 64bit Amazon Linux 2014.09 v1.2.0 running Python 2.7
+Update (07/09/2015): Now it's compatible with 64bit Amazon Linux 2015.03 v1.4.3 running Python 2.7.

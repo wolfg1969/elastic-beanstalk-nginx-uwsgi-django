@@ -1,4 +1,4 @@
 Django
 uwsgi
 gevent
-
+envdir

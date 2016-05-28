@@ -16,3 +16,6 @@ DATABASES = {
 }
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
+
+STATIC_ROOT = project_root.path('static')
+STATIC_URL = '/static/'

@@ -6,9 +6,10 @@ Configuration sample to setup an Elastic Beanstalk env with custom container set
 
 ```
 $ eb init
-$ eb create dev-env -p "64bit Amazon Linux 2015.09 v2.0.7 running Python 2.7" --single -i t2.micro 
---service-role aws-elasticbeanstalk-service-role
+$ eb create dev-env -p "64bit Amazon Linux 2016.03 v2.1.0 running Python 2.7" --single -i t2.micro --service-role aws-elasticbeanstalk-service-role --sample 
 $ eb deploy
+or 
+$ eb deploy --staged
 $ eb open
 ```
 

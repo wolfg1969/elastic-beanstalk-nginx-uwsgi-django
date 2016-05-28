@@ -1,6 +1,5 @@
 *.pyc
 
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+.elasticbeanstalk/
+.idea/
+db.sqlite3

@@ -1,4 +1,7 @@
 Django
+MySQL-Python
+Pillow
+django-environ
+pytz
 uwsgi
 gevent
-envdir

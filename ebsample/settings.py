@@ -19,5 +19,3 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 STATIC_ROOT = '/var/www/html'
 STATIC_URL = '/static/'
-
-print STATIC_ROOT

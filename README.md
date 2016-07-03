@@ -1,7 +1,7 @@
 elastic-beanstalk-nginx-uwsgi-django
 ====================================
 
-A Django sample App running with uWSGI and Nginx on AWS Elastic Beanstalk.
+A Django sample app running with uWSGI and Nginx on AWS Elastic Beanstalk.
 
 
 ```

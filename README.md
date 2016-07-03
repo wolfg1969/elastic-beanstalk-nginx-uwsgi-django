@@ -1,7 +1,7 @@
 elastic-beanstalk-nginx-uwsgi-django
 ====================================
 
-Configuration sample to setup an Elastic Beanstalk env with custom container settings with Nginx, uWSGI and Django.
+A Django sample App running with uWSGI and Nginx on AWS Elastic Beanstalk.
 
 
 ```

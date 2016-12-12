@@ -21,6 +21,7 @@ $ eb open
 ```
 
 Update:
+* (12/12/2016): Works with "64bit Amazon Linux 2016.09 v2.2.0 running Python 2.7".
 * (07/02/2016): Works with "64bit Amazon Linux 2016.03 v2.1.3 running Python 2.7".
 * (05/29/2016): Use django-environ to read configurations from EB env file.
 * (05/29/2016): Works with "64bit Amazon Linux 2016.03 v2.1.0 running Python 2.7".

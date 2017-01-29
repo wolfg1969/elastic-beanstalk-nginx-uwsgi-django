@@ -11,6 +11,16 @@ $ eb create dev-env -p "64bit Amazon Linux 2016.03 v2.1.0 running Python 2.7" --
 
 Setup environment properties:
 
+```
+$ eb setenv ALLOWED_HOSTS=ebsample.guoyong.me,dev-env.jtfiebamft.us-west-2.elasticbeanstalk.com \
+  DATABASE_URL=mysql://user:pass@host:3306/dbname?charset=utf8mb4 \
+  DEBUG=off \
+  DJANGO_SETTINGS_MODULE=ebsample.settings \
+  SECRET_KEY=<secret key> \
+  WSGI_MODULE=ebsample.wsgi
+$ 
+```
+
 ![Software Configuration](https://raw.githubusercontent.com/wolfg1969/elastic-beanstalk-nginx-uwsgi-django/feature/use_eb_env_file/static/images/Software%20Configuration.png)
 
 ```
@@ -21,6 +31,8 @@ $ eb open
 ```
 
 Update:
+* (01/29/2017): Configure uWSGI module parameter via environment variable.
+* (01/29/2017): Upgraded platform to 64bit Amazon Linux 2016.09 v2.3.1 running Python 2.7.
 * (12/12/2016): Works with "64bit Amazon Linux 2016.09 v2.2.0 running Python 2.7".
 * (07/02/2016): Works with "64bit Amazon Linux 2016.03 v2.1.3 running Python 2.7".
 * (05/29/2016): Use django-environ to read configurations from EB env file.

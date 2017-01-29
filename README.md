@@ -30,9 +30,10 @@ $ eb deploy --staged
 $ eb open
 ```
 
-Update:
+Change History:
 * (01/29/2017): Configure uWSGI module parameter via environment variable.
 * (01/29/2017): Upgraded platform to 64bit Amazon Linux 2016.09 v2.3.1 running Python 2.7.
+* (12/26/2016): Now running on "64bit Amazon Linux 2016.09 v2.3.0 running Python 2.7".
 * (12/12/2016): Works with "64bit Amazon Linux 2016.09 v2.2.0 running Python 2.7".
 * (07/02/2016): Works with "64bit Amazon Linux 2016.03 v2.1.3 running Python 2.7".
 * (05/29/2016): Use django-environ to read configurations from EB env file.

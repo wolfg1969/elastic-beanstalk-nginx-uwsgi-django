@@ -21,7 +21,7 @@ $ eb setenv ALLOWED_HOSTS=ebsample.guoyong.me,dev-env.jtfiebamft.us-west-2.elast
 $ 
 ```
 
-![Software Configuration](https://raw.githubusercontent.com/wolfg1969/elastic-beanstalk-nginx-uwsgi-django/feature/use_eb_env_file/static/images/Software%20Configuration.png)
+![Software Configuration](https://raw.githubusercontent.com/wolfg1969/elastic-beanstalk-nginx-uwsgi-django/master/static/images/Software%20Configuration.png)
 
 ```
 $ eb deploy

@@ -17,8 +17,7 @@ $ eb setenv ALLOWED_HOSTS=ebsample.guoyong.me,dev-env.jtfiebamft.us-west-2.elast
   DEBUG=off \
   DJANGO_SETTINGS_MODULE=ebsample.settings \
   SECRET_KEY=<secret key> \
-  WSGI_MODULE=ebsample.wsgi
-$ 
+  WSGI_MODULE=ebsample.wsgi 
 ```
 
 ![Software Configuration](https://raw.githubusercontent.com/wolfg1969/elastic-beanstalk-nginx-uwsgi-django/master/static/images/Software%20Configuration.png)
@@ -27,6 +26,7 @@ $
 $ eb deploy
 or 
 $ eb deploy --staged
+
 $ eb open
 ```
 

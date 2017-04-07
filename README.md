@@ -31,6 +31,9 @@ $ eb open
 ```
 
 Change History:
+
+* (04/07/2017): Create a super user 'admin' for Admin Site, the initial password is first 8 characters from your SECRET_KEY. 
+* (04/07/2017): Upgraded platform to 64bit Amazon Linux 2016.09 v2.3.3 running Python 2.7. 
 * (01/29/2017): Configure uWSGI module parameter via environment variable.
 * (01/29/2017): Upgraded platform to 64bit Amazon Linux 2016.09 v2.3.1 running Python 2.7.
 * (12/26/2016): Now running on "64bit Amazon Linux 2016.09 v2.3.0 running Python 2.7".

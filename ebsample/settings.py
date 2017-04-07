@@ -5,11 +5,20 @@ current = environ.Path(__file__)
 root = current - 3  # three folder back (/a/b/c/ - 3 = /)
 project_root = current - 2
 
-env = environ.Env(DEBUG=(bool, False),)  # set default values and casting
+env = environ.Env(
+    DEBUG=(bool, DEBUG),
+    SECRET_KEY=(str, SECRET_KEY),
+    ALLOWED_HOSTS=(list, ALLOWED_HOSTS),
+)  # set default values and casting
 
 SECRET_KEY = env('SECRET_KEY')
 
-DEBUG = env('DEBUG')  # False if not in os.environ
+DEBUG = env('DEBUG')
+
+INSTALLED_APPS = [
+    'grappelli',
+    'ebsample_app',
+] + INSTALLED_APPS
 
 DATABASES = {
     'default': env.db(),
@@ -18,4 +27,5 @@ DATABASES = {
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 STATIC_ROOT = project_root('static')
-STATIC_URL = '/static/'
+
+GRAPPELLI_ADMIN_TITLE = 'ebsample.guoyong.me'

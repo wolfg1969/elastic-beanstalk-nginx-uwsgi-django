@@ -2,6 +2,9 @@ Django
 MySQL-Python
 Pillow
 django-environ
+django-grappelli
 pytz
+
+# runtime
 uwsgi
 gevent

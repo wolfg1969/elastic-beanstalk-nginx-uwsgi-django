@@ -6,5 +6,7 @@
 }
 
 .logo {
-    padding: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }

@@ -31,7 +31,7 @@ $ eb open
 ```
 
 Change History:
-
+* (09/16/2017): Works with latest platform '64bit Amazon Linux 2017.03 v2.5.1 running Python 2.7'.
 * (06/05/2017): Works with latest platform '64bit Amazon Linux 2017.03 v2.4.0 running Python 2.7'. 
 * (04/07/2017): Create a super user 'admin' for Admin Site, the initial password is **first 8 characters of your SECRET_KEY**. 
 * (04/07/2017): Upgraded platform to 64bit Amazon Linux 2016.09 v2.3.3 running Python 2.7. 

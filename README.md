@@ -6,14 +6,14 @@ A Django sample app running with uWSGI and Nginx on AWS Elastic Beanstalk.
 
 ```
 $ eb init
-$ eb create dev-env -p "64bit Amazon Linux 2016.03 v2.1.0 running Python 2.7" --single -i t2.micro --service-role aws-elasticbeanstalk-service-role --sample 
+$ eb create ebsample-env -p "64bit Amazon Linux 2017.09 v2.6.3 running Python 2.7" --single -i t2.micro --service-role aws-elasticbeanstalk-service-role --sample 
 ```
 
 Setup environment properties:
 
 ```
-$ eb setenv ALLOWED_HOSTS=ebsample.guoyong.me,dev-env.jtfiebamft.us-west-2.elasticbeanstalk.com \
-  DATABASE_URL=mysql://user:pass@host:3306/dbname?charset=utf8mb4 \
+$ eb setenv ALLOWED_HOSTS=ebsample.guoyong.me,ebsample-env.jtfiebamft.us-east-1.elasticbeanstalk.com \
+  DATABASE_URL=mysql://<user:pass>@<host>:3306/<dbname>?charset=utf8mb4 \
   DEBUG=off \
   DJANGO_SETTINGS_MODULE=ebsample.settings \
   SECRET_KEY=<secret key> \
@@ -32,6 +32,8 @@ $ eb open
 
 Change History:
 
+* (01/16/2018): Upgraded platform to 64bit Amazon Linux 2017.09 v2.6.3 running Python 2.7.
+* (01/16/2018): Use pipenv to manage requirements.
 * (04/07/2017): Create a super user 'admin' for Admin Site, the initial password is **first 8 characters of your SECRET_KEY**. 
 * (04/07/2017): Upgraded platform to 64bit Amazon Linux 2016.09 v2.3.3 running Python 2.7. 
 * (01/29/2017): Configure uWSGI module parameter via environment variable.

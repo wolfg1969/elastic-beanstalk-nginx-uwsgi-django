@@ -28,4 +28,4 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 STATIC_ROOT = project_root('static')
 
-GRAPPELLI_ADMIN_TITLE = 'ebsample.guoyong.me'
+GRAPPELLI_ADMIN_TITLE = 'Django Sample Project'

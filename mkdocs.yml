@@ -1,0 +1,17 @@
+site_name: Django Sample Project
+site_description: Show me the code
+site_author: "@wolfg1969"
+google_analytics: ['UA-160265-11', 'www.djangosampleproject.com']
+repo_name: https://github.com/wolfg1969/elastic-beanstalk-nginx-uwsgi-django
+theme:
+  name: readthedocs
+  custom_dir: custom_theme
+markdown_extensions:
+  - toc:
+      permalink: True
+  - smarty
+  - sane_lists
+  - fenced_code
+pages:
+  - Home: index.md
+  - About: about.md

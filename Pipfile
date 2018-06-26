@@ -12,7 +12,7 @@ awsebcli = "*"
 
 [packages]
 
-django = "==1.11.9"
+django = "==1.11.13"
 mysqlclient = "*"
 pillow = "*"
 django-environ = "*"

@@ -6,13 +6,13 @@ A Django sample app running with uWSGI and Nginx on AWS Elastic Beanstalk.
 
 ```
 $ eb init
-$ eb create ebsample-env -p "64bit Amazon Linux 2017.09 v2.6.3 running Python 2.7" --single -i t2.micro --service-role aws-elasticbeanstalk-service-role --sample 
+$ eb create ebsample-env -p "Python 2.7" --single --sample
 ```
 
 Setup environment properties:
 
 ```
-$ eb setenv ALLOWED_HOSTS=ebsample.guoyong.me,ebsample-env.jtfiebamft.us-east-1.elasticbeanstalk.com \
+$ eb setenv ALLOWED_HOSTS=<domain name> \
   DATABASE_URL=mysql://<user:pass>@<host>:3306/<dbname>?charset=utf8mb4 \
   DEBUG=off \
   DJANGO_SETTINGS_MODULE=ebsample.settings \
@@ -31,6 +31,7 @@ $ eb open
 ```
 
 Change History:
+* (06/26/2018): Upgraded platform to Python 2.7 running on 64bit Amazon Linux/2.7.1.
 * (01/16/2018): Upgraded platform to 64bit Amazon Linux 2017.09 v2.6.3 running Python 2.7.
 * (01/16/2018): Use pipenv to manage requirements.
 * (09/16/2017): Works with latest platform '64bit Amazon Linux 2017.03 v2.5.1 running Python 2.7'.

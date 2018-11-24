@@ -31,6 +31,7 @@ $ eb open
 ```
 
 Change History:
+* (11/24/2018): Upgraded platform to Python 2.7 running on 64bit Amazon Linux/2.7.6.
 * (06/26/2018): Upgraded platform to Python 2.7 running on 64bit Amazon Linux/2.7.1.
 * (01/16/2018): Upgraded platform to 64bit Amazon Linux 2017.09 v2.6.3 running Python 2.7.
 * (01/16/2018): Use pipenv to manage requirements.

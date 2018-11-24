@@ -1,21 +1,13 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [dev-packages]
 
-awsebcli = "*"
-
-
 [packages]
-
 django = ">1.11.13,<2.0.0"
 mysqlclient = "*"
 pillow = "*"
 django-environ = "*"
 django-grappelli = "*"
-uwsgi = "*"
-gevent = "*"
